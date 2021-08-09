@@ -1,0 +1,217 @@
+/* ===== Configuration initial ============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ===== Desktop ============================== */
+
+html {
+  font-size: 100%; // Tamanho da fonte 16px
+
+  body {
+    .container {
+
+      .row {
+        height: 100vh;
+
+        .background__One {
+
+          font-style: italic;
+          font-family: 'Marko One', serif;
+          background-color: #1181D7;
+          padding: 1rem;
+
+          .container__one-main {
+            margin-top: 8rem;
+
+            .container__one {
+              margin-bottom: 2rem;
+
+              .container__one__child {
+                color: white;
+                font-size: 1.6rem;
+                text-decoration: none;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                padding: 10px 40px;
+
+                &:hover {
+                  background-color: #0B9FDB;
+                  transition: all .3s ease-in-out 0s;
+                }
+              }
+            }
+
+            .container__two__child {
+
+              color: white;
+              font-size: 1.6rem;
+              padding: 10px 66px;
+              text-decoration: none;
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+
+              &:hover {
+                background-color: #0B9FDB;
+                transition: all .3s ease-in-out 0s;
+              }
+            }
+
+            .container__one+.container__one {
+              margin-top: 1rem;
+            }
+          }
+        }
+
+        .background__two {
+          font-family: 'Marko One', serif;
+          /* background-color: #8689EC; */
+          background: rgb(17, 129, 215);
+          background: linear-gradient(96deg, rgba(17, 129, 215, 1) 10%, rgba(134, 137, 236, 1) 50%);
+
+          padding: 20px 5rem;
+
+          .title__main {
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+            font-style: italic;
+            font-family: 'Marko One', serif;
+          }
+
+          label {
+            color: white;
+            margin-left: 5px;
+          }
+
+          input {
+            box-shadow: none;
+            border: 2px solid #0B9FDB;
+          }
+
+          .btn__two-Main {
+            text-align: center;
+
+
+            .btn__two {
+
+              color: white;
+              background-color: #1181D7;
+              box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+              width: 20rem;
+              padding: 1rem;
+              margin-top: 2.5rem;
+
+              &:hover {
+                background-color: #0B9FDB;
+                transition: all .3s ease-in-out 0s;
+
+              }
+            }
+          }
+
+          /* ===== Alterando cor do placeholder============================== */
+          ::-webkit-input-placeholder {
+            color: #212529;
+          }
+
+          .table__main {
+            text-align: center;
+            margin-top: 4rem;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+            div {
+              cursor: pointer;
+              display: inline-block;
+              padding: 5px 10px;
+
+              i {
+                margin-left: 5px;
+              }
+            }
+
+            div:nth-child(1) {
+              background-color: #FFC107;
+            }
+
+            div:nth-child(2) {
+              background-color: #DC3545;
+            }
+
+          }
+        }
+
+        .page__listarOne {
+          margin-top: 3rem !important;
+          text-align: center;
+          padding: 20px 5rem;
+        }
+
+        .page__listarTwo {
+          padding: 20px 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* ===== Tablet ============================== */
+@media(max-width: 1199px) {
+  html {
+    font-size: 93.75%; // Tamanho da fonte 15px
+
+    body {
+      .container {
+        .row {
+          .background__One {
+            .container__one-main {
+              .container__one {
+                .container__one__child {
+                  font-size: 1.1rem;
+                  padding: 10px 20px;
+                }
+              }
+
+              .container__two__child {
+                font-size: 1.1rem;
+                padding: 10px 37px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ===== Mobile ============================== */
+@media(max-width: 768px) {
+  html {
+    font-size: 87.5%; // Tamanho da fonte 14px
+
+    body {
+      .container {
+        .row {
+          .background__One {
+            .container__one-main {
+              .container__one {
+                .container__one__child {
+                  font-size: 1rem;
+                  padding: 10px 0px;
+                }
+              }
+
+              .container__two__child {
+                font-size: 1rem;
+                padding: 10px 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

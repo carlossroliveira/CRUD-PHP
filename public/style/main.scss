@@ -68,9 +68,8 @@ html {
 
         .background__two {
           font-family: 'Marko One', serif;
-          /* background-color: #8689EC; */
           background: rgb(17, 129, 215);
-          background: linear-gradient(96deg, rgba(17, 129, 215, 1) 10%, rgba(134, 137, 236, 1) 50%);
+          background: linear-gradient(96deg, rgba(17, 129, 215, 1) 10%, #8689ec 50%);
 
           padding: 20px 5rem;
 
@@ -154,7 +153,27 @@ html {
           padding: 20px 1rem;
         }
       }
+
+
     }
+
+
+
+  }
+
+  /* ===== sweetalert2 ============================== */
+  .swal2-popup.swal2-toast {
+    margin-left: 110px !important;
+    margin-bottom: 20px !important;
+    background: #212529 !important;
+  }
+
+  .swal2-title {
+    color: white !important;
+  }
+
+  .swal2-timer-progress-bar {
+    background-color: #A5DC86 !important;
   }
 }
 

@@ -8,8 +8,7 @@
   <!-- Title Start -->
   <title>System Crud</title>
   <!-- Style Bootstrap Start -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!-- Style Start -->
   <link rel="stylesheet" href="style/main.css">
   <!-- Favicon Start -->
@@ -20,6 +19,7 @@
   <script src="https://kit.fontawesome.com/ebc6f6cdfd.js" crossorigin="anonymous"></script>
   <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -32,13 +32,13 @@
       <div class="col-3 background__One">
         <section class="container__one-main">
           <div class="container__one">
-            <a class="container__one__child" href="index.html">
+            <a class="container__one__child" href="index.php">
               <i class="fa fa-plus-square" aria-hidden="true"></i>
               Cadastrar</a>
           </div>
 
           <div>
-            <a class="container__two__child" href="_listar_pessoas.html">
+            <a class="container__two__child" href="_list_people.php">
               <i class="fa fa-list-alt" aria-hidden="true"></i>
               Listar</a>
           </div>
@@ -51,27 +51,26 @@
           <h1>Cadastrar Pessoas</h1>
         </div>
 
-        <form>
+        <form class="form" method="post">
 
           <div class="mb-3">
             <label for="nome__label" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome__label" aria-describedby="nome"
-              placeholder="Nome Completo">
+            <input type="text" class="form-control" id="nome__label" aria-describedby="nome" placeholder="Nome Completo" autocomplete="off" name="fullName">
           </div>
 
           <div class="mb-3">
             <label for="data__label" class="form-label">Data</label>
-            <input type="date" class="form-control" id="data__label">
+            <input type="date" class="form-control" id="data__label" autocomplete="off" name="fullDate">
           </div>
 
           <div class="mb-3">
             <label for="rg__label" class="form-label">RG</label>
-            <input type="number" class="form-control" id="rg__label" placeholder="Informe seu RG">
+            <input type="text" class="form-control" id="rg__label" placeholder="Informe seu RG" autocomplete="off" name="fullRG">
           </div>
 
           <div class="mb-3">
             <label for="cpf__label" class="form-label">CPF</label>
-            <input type="number" class="form-control" id="cpf__label" placeholder="Informe seu CPF">
+            <input type="text" class="form-control" id="cpf__label" placeholder="Informe seu CPF" autocomplete="off" name="fullCPF">
           </div>
 
           <div class="btn__two-Main">
@@ -86,11 +85,18 @@
 
 
 
+
+
+  <!-- sweetalert2 Start -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- Bootstrap Start -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
   </script>
   <!-- JavaScript Start -->
-  <script src="js/index.js"></script>
+  <script src="js/jQuery.js"></script>
+  <script src="js/ajax__post.js"></script>
+
+
 </body>
+
 </html>

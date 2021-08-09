@@ -32,13 +32,13 @@
       <div class="col-12 background__One">
         <section class="container__one-main page__listarOne">
           <div class="container__one">
-            <a class="container__one__child" href="index.html">
+            <a class="container__one__child" href="index.php">
               <i class="fa fa-plus-square" aria-hidden="true"></i>
               Cadastrar</a>
           </div>
 
           <div>
-            <a class="container__two__child" href="_listar_pessoas.html">
+            <a class="container__two__child" href="_list_people.php">
               <i class="fa fa-list-alt" aria-hidden="true"></i>
               Listar</a>
           </div>

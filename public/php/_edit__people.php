@@ -43,13 +43,14 @@
           <h1>Pessoa Selecionada</h1>
         </div>
 
-
         <form class="form_update" method="post">
+
           <div class="btn__two-Main">
             <button type="submit" class="btn btn__two btn-edit">Atualizar
               <i class="fa fa-upload" aria-hidden="true"></i>
             </button>
           </div>
+
           <?php
 
           include './connection.php';
@@ -65,9 +66,6 @@
             $fullRG =   $array['rg_bank'];
             $fullCPF =  $array['cpf_bank'];
 
-            $dateFull = strtotime($fullDate);
-            $dateBrazil = date('d-m-Y', $dateFull);
-
           ?>
 
             <div class="mb-3">
@@ -78,7 +76,7 @@
 
             <div class="mb-3">
               <label for="data__label" class="form-label">Data</label>
-              <input type="date" class="form-control" id="data__label" name="fullDate" value="<?= $dateBrazil ?>">
+              <input type="date" class="form-control" id="data__label" name="fullDate" value="<?= $fullDate ?>">
             </div>
 
             <div class="mb-3">
@@ -91,28 +89,24 @@
               <input type="text" class="form-control" id="cpf__label" name="fullCPF" value="<?= $fullCPF ?>">
             </div>
 
-
-
           <?php } ?>
 
         </form>
-
-
-
-
-
-
 
       </div>
     </div>
   </section>
 
-
+  
+  <!-- sweetalert2 Start -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- Bootstrap Start -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
   </script>
   <!-- JavaScript Start -->
+  <script src="../js/jQuery.js"></script>
   <script src="../js/ajax__update.js"></script>
+
 
 </body>
 </html>

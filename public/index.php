@@ -95,7 +95,6 @@
   <!-- JavaScript Start -->
   <script src="js/jQuery.js"></script>
   <script src="js/ajax__creat.js"></script>
-  <script src="js/ajax__update.js"></script>
 
 
 </body>

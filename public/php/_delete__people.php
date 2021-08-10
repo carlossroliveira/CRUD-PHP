@@ -24,9 +24,7 @@
 <body>
 
   <section class="container">
-
     <div class="row">
-
       <div class="col-12 background__One _edit__one _idit--main">
         <section class="container__one-main page__listarOne _idit-main">
           <div>
@@ -36,15 +34,11 @@
           </div>
         </section>
       </div>
-
       <div class="col-12 background__two page__listarTwo _edit__two">
-
         <div class="title__main">
           <h1>Pessoa Deletada</h1>
         </div>
-
         <table class="table table-dark table__main">
-
           <thead>
             <tr>
               <th scope="col">Id</th>
@@ -56,6 +50,7 @@
             </tr>
           </thead>
 
+          <!-- PHP -->
           <?php
 
           include './connection.php';
@@ -65,7 +60,6 @@
           $search = mysqli_query($con, "SELECT * FROM `table_people` WHERE id_bank = $id");
 
           while ($array = mysqli_fetch_array($search)) {
-
 
             $id_bank = $array['id_bank'];
             $fullName = $array['name_bank'];
@@ -94,13 +88,17 @@
     </div>
   </section>
 
+<!-- PHP -->
   <?php
   mysqli_query($con, "DELETE FROM `table_people` WHERE id_bank = $id");
   ?>
 
+  <!-- sweetalert2 Start -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- Bootstrap Start -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
   </script>
+  <script src="../js/mesage.js"></script>
 
 </body>
 </html>

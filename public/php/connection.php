@@ -7,3 +7,4 @@ $database = "bank_people";
 
 $con = new mysqli($host, $user, $password, $database);
 
+?>

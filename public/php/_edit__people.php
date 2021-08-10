@@ -24,9 +24,7 @@
 <body>
 
   <section class="container">
-
     <div class="row">
-
       <div class="col-12 background__One _edit__one _idit--main">
         <section class="container__one-main page__listarOne _idit-main">
           <div>
@@ -36,21 +34,18 @@
           </div>
         </section>
       </div>
-
       <div class="col-12 background__two page__listarTwo _edit__two">
-
         <div class="title__main">
           <h1>Pessoa Selecionada</h1>
         </div>
-
         <form class="form_update" method="post">
-
           <div class="btn__two-Main">
             <button type="submit" class="btn btn__two btn-edit">Atualizar
               <i class="fa fa-upload" aria-hidden="true"></i>
             </button>
           </div>
 
+          <!-- PHP -->
           <?php
 
           include './connection.php';
@@ -88,7 +83,7 @@
               <label for="cpf__label" class="form-label">CPF</label>
               <input type="text" class="form-control" id="cpf__label" name="fullCPF" value="<?= $fullCPF ?>">
             </div>
-
+            <!-- PHP -->
           <?php } ?>
 
         </form>
@@ -97,7 +92,7 @@
     </div>
   </section>
 
-  
+
   <!-- sweetalert2 Start -->
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- Bootstrap Start -->

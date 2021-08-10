@@ -24,7 +24,6 @@
 
 <body>
 
-
   <section class="container">
 
     <div class="row">
@@ -81,10 +80,6 @@
       </div>
     </div>
   </section>
-
-
-
-
 
 
   <!-- sweetalert2 Start -->

@@ -8,6 +8,6 @@ setTimeout(function () {
   });
   Toast.fire({
     icon: "success",
-    title: "Deletando Pessoa!",
+    title: "Cadastro Deletado!",
   });
 });

@@ -46,6 +46,10 @@ html body .container .row .background__One .container__one-main .container__one 
   transition: all .3s ease-in-out 0s;
 }
 
+html body .container .row .background__One .container__one-main .back__color {
+  background-color: #0B9FDB;
+}
+
 html body .container .row .background__One .container__one-main .container__two__child {
   color: white;
   font-size: 1.6rem;
@@ -59,6 +63,10 @@ html body .container .row .background__One .container__one-main .container__two_
   background-color: #0B9FDB;
   -webkit-transition: all .3s ease-in-out 0s;
   transition: all .3s ease-in-out 0s;
+}
+
+html body .container .row .background__One .container__one-main .width {
+  padding: 10px 73px;
 }
 
 html body .container .row .background__One .container__one-main .container__one + .container__one {
@@ -187,6 +195,10 @@ html body .container .row ._edit__two {
 
 html body .container .row ._edit__two .btn-edit {
   margin-top: 0px !important;
+}
+
+html body .container .height {
+  height: unset;
 }
 
 html .swal2-popup.swal2-toast {

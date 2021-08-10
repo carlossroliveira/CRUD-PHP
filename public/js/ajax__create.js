@@ -15,7 +15,7 @@ $(document).ready(function () {
         });
         Toast.fire({
           icon: "success",
-          title: "Formulário Enviado!",
+          title: "Cadastro Enviado!",
         });
         setTimeout(function () {
           $(".form")[0].reset();

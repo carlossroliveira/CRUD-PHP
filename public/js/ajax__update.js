@@ -15,7 +15,7 @@ $(document).ready(function () {
         });
         Toast.fire({
           icon: "success",
-          title: "Dados Atualizados!",
+          title: "Cadastro Atualizado!",
         });
       },
     });

@@ -31,15 +31,15 @@
       <div class="col-3 background__One">
         <section class="container__one-main">
           <div class="container__one">
-            <a class="container__one__child" href="index.php">
+            <a class="container__one__child back__color" href="index.php">
               <i class="fa fa-plus-square" aria-hidden="true"></i>
-              Cadastrar</a>
+              Cadastro</a>
           </div>
 
           <div>
             <a class="container__two__child" href="_list_people.php">
               <i class="fa fa-list-alt" aria-hidden="true"></i>
-              Listar</a>
+              Lista</a>
           </div>
         </section>
       </div>
@@ -47,7 +47,7 @@
       <div class="col-9 background__two">
 
         <div class="title__main">
-          <h1>Cadastrar Pessoas</h1>
+          <h1>Cadastro de Pessoas</h1>
         </div>
 
         <form class="form" method="post">
@@ -89,8 +89,9 @@
   </script>
   <!-- JavaScript Start -->
   <script src="js/jQuery.js"></script>
-  <script src="js/ajax__creat.js"></script>
+  <script src="js/ajax__create.js"></script>
 
 
 </body>
+
 </html>

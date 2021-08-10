@@ -24,7 +24,7 @@
 <body>
 
   <section class="container">
-    <div class="row">
+    <div class="row height">
       <div class="col-12 background__One _edit__one _idit--main">
         <section class="container__one-main page__listarOne _idit-main">
           <div>
@@ -36,7 +36,7 @@
       </div>
       <div class="col-12 background__two page__listarTwo _edit__two">
         <div class="title__main">
-          <h1>Pessoa Selecionada</h1>
+          <h1>Cadastro Selecionado</h1>
         </div>
         <form class="form_update" method="post">
           <div class="btn__two-Main">

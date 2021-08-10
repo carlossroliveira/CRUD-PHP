@@ -34,15 +34,15 @@
           </div>
 
           <div>
-            <a class="container__two__child" href="_list_people.php">
+            <a class="container__two__child back__color width" href="_list_people.php">
               <i class="fa fa-list-alt" aria-hidden="true"></i>
-              Listar</a>
+              Lista</a>
           </div>
         </section>
       </div>
       <div class="col-12 background__two page__listarTwo">
         <div class="title__main">
-          <h1>Listar de Pessoas</h1>
+          <h1>Lista de Cadastro</h1>
         </div>
         <table class="table table-dark table__main">
           <thead>

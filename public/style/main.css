@@ -65,6 +65,10 @@ html body .container .row .background__One .container__one-main .container__one 
   margin-top: 1rem;
 }
 
+html body .container .row ._edit__one {
+  height: 9rem;
+}
+
 html body .container .row .background__two {
   font-family: 'Marko One', serif;
   background: #1181d7;
@@ -129,16 +133,33 @@ html body .container .row .background__two .table__main div {
   padding: 5px 10px;
 }
 
-html body .container .row .background__two .table__main div i {
+html body .container .row .background__two .table__main div a {
+  text-decoration: none;
+  color: white;
+}
+
+html body .container .row .background__two .table__main div a i {
   margin-left: 5px;
 }
 
 html body .container .row .background__two .table__main div:nth-child(1) {
-  background-color: #FFC107;
+  background-color: #FFD600;
+}
+
+html body .container .row .background__two .table__main div:nth-child(1):hover {
+  background-color: #FDD835;
+  -webkit-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
 }
 
 html body .container .row .background__two .table__main div:nth-child(2) {
-  background-color: #DC3545;
+  background-color: #E53935;
+}
+
+html body .container .row .background__two .table__main div:nth-child(2):hover {
+  background-color: #F44336;
+  -webkit-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
 }
 
 html body .container .row .page__listarOne {
@@ -149,6 +170,23 @@ html body .container .row .page__listarOne {
 
 html body .container .row .page__listarTwo {
   padding: 20px 1rem;
+}
+
+html body .container .row ._idit--main {
+  height: 6rem;
+}
+
+html body .container .row ._idit--main ._idit-main {
+  margin-top: 0rem !important;
+  padding: 10px 5rem !important;
+}
+
+html body .container .row ._edit__two {
+  height: 529px;
+}
+
+html body .container .row ._edit__two .btn-edit {
+  margin-top: 0px !important;
 }
 
 html .swal2-popup.swal2-toast {

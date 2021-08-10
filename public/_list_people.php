@@ -8,8 +8,7 @@
   <!-- Title Start -->
   <title>System Crud</title>
   <!-- Style Bootstrap Start -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!-- Style Start -->
   <link rel="stylesheet" href="style/main.css">
   <!-- Favicon Start -->
@@ -52,6 +51,7 @@
         </div>
 
         <table class="table table-dark table__main">
+
           <thead>
             <tr>
               <th scope="col">Id</th>
@@ -62,24 +62,57 @@
               <th scope="col">Ação</th>
             </tr>
           </thead>
-          <tbody>
+
+          <?php
+
+          include './php/connection.php';
+
+          $search = mysqli_query($con, "SELECT * FROM `table_people`");
+
+
+          while ($array = mysqli_fetch_array($search)) {
+
+
+            $id_bank = $array['id_bank'];
+            $fullName = $array['name_bank'];
+            $fullDate = $array['date_back'];
+            $fullRG =   $array['rg_bank'];
+            $fullCPF =  $array['cpf_bank'];
+
+            $dateFull = strtotime($fullDate);
+            $dateBrazil = date('d-m-Y', $dateFull);
+
+          ?>
+
             <tr>
-              <th scope="row">1</th>
-              <td>Carlos Oliveira</td>
-              <td>03-05-0000</td>
-              <td>13.000.000-13</td>
-              <td>111.222.333-45</td>
+              <th scope="row"><?= $id_bank ?></th>
+              <td><?= $fullName ?></td>
+              <td><?= $dateBrazil  ?></td>
+              <td><?= $fullRG ?></td>
+              <td><?= $fullCPF ?></td>
+
               <td>
                 <div>
-                  Editar<i class="fa fa-pencil-square" aria-hidden="true"></i>
+                  <a href="./php/_edit__people.php?id=<?= $id_bank ?>">
+                    Editar<i class="fa fa-pencil-square" aria-hidden="true"></i>
+                  </a>
+
                 </div>
 
                 <div>
-                  Deleta<i class="fa fa-trash" aria-hidden="true"></i>
+                  <a href="">
+                    Deleta<i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+
                 </div>
               </td>
+
+
+            <?php } ?>
+
             </tr>
-          </tbody>
+
+
         </table>
 
       </div>
@@ -90,8 +123,7 @@
 
 
   <!-- Bootstrap Start -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
   </script>
   <!-- JavaScript Start -->
   <script src="js/index.js"></script>

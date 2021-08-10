@@ -1,9 +1,9 @@
 $(document).ready(function () {
-  $(".form").submit(function () {
+  $(".form_update").submit(function () {
     $.ajax({
-      url: "_create__people.php",
+      url: "php/_update__people.php",
       type: "POST",
-      data: $(".form").serialize(),
+      data: $(".form_update").serialize(),
 
       success: function () {
         const Toast = Swal.mixin({
@@ -15,10 +15,10 @@ $(document).ready(function () {
         });
         Toast.fire({
           icon: "success",
-          title: "Formulário Enviado!",
+          title: "Dados Alterados",
         });
         setTimeout(function () {
-          $(".form")[0].reset();
+          $(".form_update")[0].reset();
         }, 2000);
       },
     });

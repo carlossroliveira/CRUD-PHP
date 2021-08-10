@@ -94,9 +94,9 @@
   </script>
   <!-- JavaScript Start -->
   <script src="js/jQuery.js"></script>
-  <script src="js/ajax__post.js"></script>
+  <script src="js/ajax__creat.js"></script>
+  <script src="js/ajax__update.js"></script>
 
 
 </body>
-
 </html>

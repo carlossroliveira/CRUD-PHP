@@ -236,12 +236,21 @@ html .swal2-timer-progress-bar {
     font-size: 87.5%;
   }
   html body .container .row .background__One .container__one-main .container__one .container__one__child {
-    font-size: 1rem;
+    font-size: 17px;
     padding: 10px 0px;
   }
+  html body .container .row .background__One .container__one-main .container__one .container__one__child i {
+    display: none;
+  }
   html body .container .row .background__One .container__one-main .container__two__child {
-    font-size: 1rem;
+    font-size: 20px;
     padding: 10px 14px;
+  }
+  html body .container .row .background__One .container__one-main .container__two__child i {
+    display: none;
+  }
+  html body .container .row .background__two .btn__two {
+    width: 10rem !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

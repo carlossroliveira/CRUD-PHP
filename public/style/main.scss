@@ -271,17 +271,33 @@ html {
             .container__one-main {
               .container__one {
                 .container__one__child {
-                  font-size: 1rem;
+                  font-size: 17px;
                   padding: 10px 0px;
+
+                  i {
+                    display: none;
+                  }
                 }
               }
 
               .container__two__child {
-                font-size: 1rem;
+                font-size: 20px;
                 padding: 10px 14px;
+
+                i {
+                  display: none;
+                }
               }
             }
           }
+
+          .background__two {
+            .btn__two {
+              width: 10rem !important;
+            }
+          }
+
+
         }
       }
     }

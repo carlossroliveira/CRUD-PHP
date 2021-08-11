@@ -54,26 +54,26 @@
 
           <div class="mb-3">
             <label for="nome__label" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome__label" aria-describedby="nome" placeholder="Nome Completo" autocomplete="off" name="fullName">
+            <input type="text" class="form-control" id="nome__label" aria-describedby="nome" placeholder="Nome Completo" autocomplete="off" name="fullName" data-nome>
           </div>
 
           <div class="mb-3">
             <label for="data__label" class="form-label">Data</label>
-            <input type="date" class="form-control" id="data__label" autocomplete="off" name="fullDate">
+            <input type="date" class="form-control" id="data__label" autocomplete="off" name="fullDate" data-date>
           </div>
 
           <div class="mb-3">
             <label for="rg__label" class="form-label">RG</label>
-            <input type="text" class="form-control" id="rg__label" placeholder="Informe seu RG" autocomplete="off" name="fullRG">
+            <input type="text" class="form-control" id="rg__label" placeholder="Informe seu RG" autocomplete="off" name="fullRG" data-rg>
           </div>
 
           <div class="mb-3">
             <label for="cpf__label" class="form-label">CPF</label>
-            <input type="text" class="form-control" id="cpf__label" placeholder="Informe seu CPF" autocomplete="off" name="fullCPF">
+            <input type="text" class="form-control" id="cpf__label" placeholder="Informe seu CPF" autocomplete="off" name="fullCPF" data-cpf>
           </div>
 
           <div class="btn__two-Main">
-            <button type="submit" class="btn btn__two">Enviar</button>
+            <button type="submit" class="btn btn__two" data-send>Enviar</button>
           </div>
         </form>
 
@@ -90,8 +90,8 @@
   <!-- JavaScript Start -->
   <script src="js/jQuery.js"></script>
   <script src="js/ajax__create.js"></script>
+  <script src="js/validation.js"></script>
 
 
 </body>
-
 </html>
